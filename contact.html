@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact 3AmigosBiscuits - organic dog biscuit company started in New Jersey, now in Las Vegas.">
+    <meta name="keywords" content="contact us, customer service, dog treat business">
+    <title>Contact Us | 3AmigosBiscuits</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <i class="fas fa-bone me-2"></i>3AmigosBiscuits
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cart.html">
+                                    <i class="fas fa-shopping-cart cart-icon"></i>
+                                    <span class="cart-count">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you and your furry friends!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h2 class="section-title">Send Us a Message</h2>
+                    <form id="contact-form" action="contact.php" method="POST">
+                        <input type="hidden" name="type" value="contact">
+                        <div class="hp-field" aria-hidden="true"><label>Leave blank<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div class="form-status mt-3"></div>
+                    </form>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h2 class="section-title">Find Us</h2>
+                    <p><strong>Las Vegas, Nevada</strong></p>
+                    <p>Originally started in New Jersey in 2006, we relocated our operations to Las Vegas, Nevada in 2020. While we currently operate as an online-only business, we're planning to open a physical storefront in Las Vegas soon! Stay tuned for updates.</p>
+                    
+                    <div class="mt-4">
+                        <h4>Business Hours</h4>
+                        <p>Monday - Friday: 9am - 5pm PST<br>
+                        Saturday: 10am - 2pm PST<br>
+                        Sunday: Closed</p>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4>Connect With Us</h4>
+                        <div class="social-icons">
+                            <a href="https://www.tiktok.com/@3amigosbiscuits" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4>Email</h4>
+                        <p><a href="mailto:hello@3amigosbiscuits.com">hello@3amigosbiscuits.com</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="bg-light p-4 rounded">
+                        <h3 class="text-center mb-3">Las Vegas Location (Coming Soon!)</h3>
+                        <div class="bg-secondary text-white text-center p-5 rounded">
+                            <p>Interactive Google Map will be embedded here once we have a physical location.</p>
+                            <p>For now, we ship nationwide from our Las Vegas kitchen!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="footer-logo">3AmigosBiscuits</div>
+                    <p>Organic homemade dog biscuits made with love - started in New Jersey in 2006, now in Las Vegas.</p>
+                    <div class="social-icons mt-3">
+                        <a href="https://www.tiktok.com/@3amigosbiscuits" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="footer-links">
+                        <h5>Legal</h5>
+                        <ul>
+                            <li><a href="policies.html#privacy">Privacy Policy</a></li>
+                            <li><a href="policies.html#terms">Terms of Service</a></li>
+                            <li><a href="policies.html#shipping">Shipping Policy</a></li>
+                            <li><a href="policies.html#refunds">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="footer-links">
+                        <h5>Newsletter</h5>
+                        <p>Subscribe for special offers and updates!</p>
+                        <form class="newsletter-form" action="contact.php" method="POST">
+                            <input type="hidden" name="type" value="newsletter">
+                            <div class="input-group">
+                                <input type="email" name="email" class="form-control" placeholder="Your email" required>
+                                <button class="btn btn-outline-light" type="submit">Subscribe</button>
+                            </div>
+                            <div class="form-status small mt-2"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© <span class="year">2026</span> 3AmigosBiscuits by Regine Carney & James Copeland. All rights reserved.</p>
+                <p>Homemade dog treats - not for resale. Check local regulations.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
